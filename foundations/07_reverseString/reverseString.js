@@ -1,13 +1,5 @@
 const reverseString = function (str) {
-  let arr = str.toLowerCase().split("");
-  let reversedArr = [];
-
-  arr.forEach((element) => {
-    reversedArr.unshift(element);
-  });
-
-  output = reversedArr.join("");
-  return output;
+  return str.toLowerCase().split("").reverse().join("");
 };
 
 console.log(reverseString("Hello there"));
